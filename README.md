@@ -8,3 +8,4 @@ A simple keylogger script for Windows (^XP)
 - record pasted content of `Ctrl-V`
 - ability to hide command prompt window
 - ability to log key presses outside of command prompt window
+- specify lexical granularity at sentence, word, action, or character levels
