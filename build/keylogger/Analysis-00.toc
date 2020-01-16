@@ -23,6 +23,14 @@
    'c:\\users\\rebecca '
    'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\datetime.py',
    'PYMODULE'),
+  ('typing',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\typing.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\_py_abc.py',
+   'PYMODULE'),
   ('stringprep',
    'c:\\users\\rebecca '
    'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\stringprep.py',
@@ -30,6 +38,10 @@
   ('fnmatch',
    'c:\\users\\rebecca '
    'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\fnmatch.py',
+   'PYMODULE'),
+  ('struct',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\struct.py',
    'PYMODULE'),
   ('_compat_pickle',
    'c:\\users\\rebecca '
@@ -190,6 +202,14 @@
   ('platform',
    'c:\\users\\rebecca '
    'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\platform.py',
+   'PYMODULE'),
+  ('token',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\token.py',
+   'PYMODULE'),
+  ('tokenize',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\tokenize.py',
    'PYMODULE'),
   ('urllib.parse',
    'c:\\users\\rebecca '
@@ -455,54 +475,6 @@
    'c:\\users\\rebecca '
    'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\doctest.py',
    'PYMODULE'),
-  ('pprint',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\pprint.py',
-   'PYMODULE'),
-  ('pickle',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\pickle.py',
-   'PYMODULE'),
-  ('tracemalloc',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\tracemalloc.py',
-   'PYMODULE'),
-  ('token',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\token.py',
-   'PYMODULE'),
-  ('struct',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\struct.py',
-   'PYMODULE'),
-  ('gettext',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\gettext.py',
-   'PYMODULE'),
-  ('textwrap',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\textwrap.py',
-   'PYMODULE'),
-  ('argparse',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\argparse.py',
-   'PYMODULE'),
-  ('tokenize',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\tokenize.py',
-   'PYMODULE'),
-  ('_py_abc',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\_py_abc.py',
-   'PYMODULE'),
-  ('copy',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\copy.py',
-   'PYMODULE'),
-  ('typing',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\typing.py',
-   'PYMODULE'),
   ('stat',
    'c:\\users\\rebecca '
    'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\stat.py',
@@ -542,6 +514,34 @@
   ('os',
    'c:\\users\\rebecca '
    'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\os.py',
+   'PYMODULE'),
+  ('gettext',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\gettext.py',
+   'PYMODULE'),
+  ('textwrap',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\textwrap.py',
+   'PYMODULE'),
+  ('argparse',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\argparse.py',
+   'PYMODULE'),
+  ('pprint',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\pprint.py',
+   'PYMODULE'),
+  ('pickle',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\pickle.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('copy',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\lib\\copy.py',
    'PYMODULE'),
   ('logging',
    'c:\\users\\rebecca '
@@ -679,13 +679,13 @@
    'c:\\users\\rebecca '
    'ramnauth\\appdata\\local\\programs\\python\\python37-32\\DLLs\\_ctypes.pyd',
    'EXTENSION'),
-  ('libssl-1_1.dll',
-   'c:\\users\\rebecca '
-   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\DLLs\\libssl-1_1.dll',
-   'BINARY'),
   ('libcrypto-1_1.dll',
    'c:\\users\\rebecca '
    'ramnauth\\appdata\\local\\programs\\python\\python37-32\\DLLs\\libcrypto-1_1.dll',
+   'BINARY'),
+  ('libssl-1_1.dll',
+   'c:\\users\\rebecca '
+   'ramnauth\\appdata\\local\\programs\\python\\python37-32\\DLLs\\libssl-1_1.dll',
    'BINARY')],
  [],
  [],
