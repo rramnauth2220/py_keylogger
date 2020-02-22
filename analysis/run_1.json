@@ -1,0 +1,238 @@
+{
+  "participants": [
+    {
+      "name": "Bfl Participant"
+    },
+    {
+      "name": "Bfl Human"
+    }
+  ],
+  "messages": [
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234745700,
+      "content": "Pizza is very popular. My friend eats a lot of Pizza. He likes ham and pineapple.",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234722040,
+      "content": "i like pizza when im drunk its just better that way",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234702386,
+      "content": "Excuse me! Interesting comparison.",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234684013,
+      "content": "I'm glad you got a laugh out of it. Yes I like to eat pizza. My favourite topping is pepperoni. You love pizza on a night out. What do you like about it so much?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234683713,
+      "content": "ummm just like it on a chilled morning",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234659285,
+      "content": "haha i love pizza on a night out",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234652339,
+      "content": "Whoa. That's a lot of \"likes\"! Mmm. Yes especially with butter melting on it. You love like toast with avocado and poached eggs. What do you like about it so much?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234639944,
+      "content": "then like garlicy kale and mshrooms",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234629191,
+      "content": "ummmm i love like toast with avocado and poached eggs",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234628429,
+      "content": "Yes. I love kebabs. Especially on my way home from a night out.",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234614465,
+      "content": "you like kebabs?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234591184,
+      "content": "I require only kebabs. What does it taste like?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234577123,
+      "content": "or sunday brunch",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234577013,
+      "content": "Hi there!",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234569192,
+      "content": "whats your favourite food mine is a sunday lunch",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234561562,
+      "content": "hey",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234460197,
+      "content": "I haven't watched either, but I've heard lots about both",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234445968,
+      "content": "have you watched it",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234442554,
+      "content": "but really into homeland",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234437050,
+      "content": "ummmm i love friends but theyve taken it off netflix",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234423637,
+      "content": "What do you watch on TV?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234417582,
+      "content": "I'm super duper hungry aaand tired",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234408109,
+      "content": "Same!",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234398761,
+      "content": "and eat food",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234388179,
+      "content": "excited to go home and chill and watch tv",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234385753,
+      "content": "Yeah?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234376432,
+      "content": "me too",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234374789,
+      "content": "i feel that",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234365259,
+      "content": "I'm okay. I bit tired",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234350138,
+      "content": "Confidence is always good to have",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234334260,
+      "content": "haha good point",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234326391,
+      "content": "Haha, doesn't sound like you are!",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234325311,
+      "content": "im good how are you",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234305644,
+      "content": "ummmm one of my attributes is that i am confident ?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234295136,
+      "content": "How are you?",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Human",
+      "timestamp_ms": 1582234291192,
+      "content": "Hello",
+      "type": "Generic"
+    },
+    {
+      "sender_name": "Bfl Participant",
+      "timestamp_ms": 1582234275160,
+      "content": "hi",
+      "type": "Generic"
+    }
+  ],
+  "title": "Bfl Participant",
+  "is_still_participant": true,
+  "thread_type": "Regular",
+  "thread_path": "inbox/BflParticipant_kBHyrU2cIQ"
+}
